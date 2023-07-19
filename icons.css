@@ -1,0 +1,90 @@
+[class*="icon-"]::after,
+[class*="icon-"]::before {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    
+}
+:root {
+    --primary-color : #DA9F5B;
+}
+.icon-bars {
+    padding: 2px;
+    border: transparent;
+    border-radius: 2px;
+    width: 50px;
+}
+.icon-bars::after {
+    content: "\f0c9";
+    font-size: 1.2rem;
+}
+.icon-bars:hover::after {
+    color: #675600;
+    cursor: pointer;
+}
+
+a.icon-casa {
+    text-decoration: none;
+}
+.icon-casa::after {
+    content: "\f061";
+    color: #0fff02;
+}
+
+.icon-casa:hover::after {
+    color: #0800ff;
+    padding-left: 5px;
+}
+
+/* Arrow Icon */
+.icon-arrow::after {
+    content: "\f061";
+    padding-left: 5px;
+}
+.icon-arrow:hover::after {
+    color: #ff0202;
+}
+
+/* Shoping Icon */
+.icon-shopping::before {
+    content: "\f07a";
+}
+
+/* Botão humburger */
+.icon-btn-nav::before {
+    content: "\f0c9";
+}
+.icon-check::before{
+    content: "\f00c";
+    color: var(--primary-color);
+    padding-right: 10px;
+    
+}
+.icon-check{
+    list-style: none;
+    padding:5px;
+}
+
+.icon-truck::before{
+    content:"\f0d1";
+    
+}
+.service-img::before{
+    color: #884d00;
+    background-color: var(--primary-color);
+    height: 25px;
+    width: 25px;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin: 0 10px 0 0;
+}
+.icon-coffee::before{
+    content: "\f0f4";
+}
+.icon-medal::before{
+    content: "\f5a2"
+}
+.icon-table::before{
+    content: "\f0ce";
+}

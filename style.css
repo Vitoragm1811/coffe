@@ -1,0 +1,291 @@
+
+:root {
+    --primary-color : #DA9F5B;
+    --secondary-color: #4F3D39;
+    --success-color : #FFFBF2;
+    --dark-color: #1B110F;
+    --hover-color: #913a00;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--dark-color);
+}
+
+html {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    overflow: auto;
+    position: absolute;
+    height: auto;
+}
+
+body {
+    background-color: var(--success-color);
+    height: auto;
+}
+
+.container {
+    /* border: 1px solid #000; */
+    width: 100%;
+    height: auto;
+    
+}
+
+.logo {
+    /* border: 1px solid #d00505; */
+    padding: 10px;
+    font-size: 1.5rem;
+    text-transform: uppercase ;
+    font-weight: 900;
+    color: var(--success-color)
+}
+
+.nav-bar {
+    /* border: 1px solid #000ac4; */
+   
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    position: fixed;
+    width: 100%;
+}
+
+.menu-bar {
+    list-style-type: none;
+    display: flex;
+    
+}
+
+.item-list {
+    /* border-bottom: 1px solid #000ac4; */
+}
+
+.bar-link {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 0.7rem;
+    color: var(--success-color);
+    cursor: pointer;
+}
+
+.bar-link:active {
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+.bar-link:hover {
+    color: var(--primary-color);
+}
+
+.main {
+    padding: 250px 0;
+    /* position: relative; */
+    background-size: 50%;
+    background-repeat: repeat-x;
+    background-position: 0 bottom;
+    /* animation-name: arvore; */
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    background-color: #4f3d3981;
+       
+}
+
+@keyframes arvore {
+    from {
+        background-position: -500px bottom;
+    }
+    to{
+        background-position: 2000px bottom;
+    }
+}
+
+.main .slogan {
+    text-align: center;
+}
+
+.header {
+    background-color: #4F3D39;
+    background-image: url('/images/coffee-2.jpg');
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 700px;
+    /* background-position: 50%; */
+}
+
+.active {
+    color: var(--primary-color);
+}
+
+.main-coffee {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: var(--success-color)
+    /* display: none; */
+}
+
+.main-slogan {
+    color: var(--primary-color);
+}
+.main-data{
+    color: var(--success-color)
+}
+.sup{
+    color: var(--success-color)
+}
+.opacidade {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffc4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.login {
+    width: 50%;
+    border: 1px solid #000;
+    background-color: #FFFBF2;
+    color: #000;
+    padding: 50px;
+    box-shadow: 50px 20px 10px rgba(0, 0, 0, 0.573);
+    text-shadow: 1px 1px 1px #0000ff52;
+    font-size: 1.5rem;
+}
+
+.top-bar {
+    color: var(--success-color);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    animation-name: botao;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    overflow: auto;
+    cursor: pointer;
+}
+
+@keyframes botao {
+    from {
+        bottom: 20px;
+    }
+    to {
+        bottom: 30px;
+    }
+}
+
+.pseudo {
+    border: #000 solid 1px;
+    width: 200px;
+    margin: auto;
+}
+
+/* .pseudo span::after {
+    content: '>';
+    border-right: solid 1px #000;
+    padding-right: 10px;
+} */
+
+
+@media only screen and (max-width: 992px) {
+    .nav-bar {
+        display: none;
+    }
+}
+
+     
+.about{
+    text-align: center;
+}
+
+
+  .box {
+    width: 50%;
+    float: left;
+    height: 120px;/*Altura da linha*/
+   }
+   
+   .linha-vertical {
+    border-left: 2px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+    box-sizing: border-box;
+    color:var(--primary-color);
+    margin-top: 40px;
+    margin-bottom: 15px;
+   }
+  
+.abt-us{
+    color:var(--primary-color);
+    font-size: 35px;
+    letter-spacing: 10px;
+}
+.serving{
+    font-size: 50px;
+    margin-top: 15px;
+    color: var(--dark-color)
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px;
+    
+}
+h2{
+    padding-bottom: 35px;
+}
+p{
+    padding-bottom:20px;
+}
+
+.learn-more{
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    color:var(--success-color);
+    padding:10px;    
+}
+.learn-more:hover{
+    background-color: var(--hover-color);
+}
+.learn-more-2{
+    background-color: var(--primary-color);
+    text-decoration: none;
+    padding: 10px;   
+}
+.learn-more-2:hover{
+    background-color: var(--hover-color);
+}
+
+.serv{
+    font-size: smaller;
+    padding-top: 20px;
+}
+.serv .services{
+    padding:0px 70px 70px 70px;
+    
+}
+.icones{
+    padding: 0;
+}
+.icones :nth-child(3){
+    padding-bottom: 30px;
+}
+.icon-topbar::after {
+    content: "\f062";
+    overflow: auto;
+}
+.active{
+color: var(--primary-color);
+    font-weight: 900;
+}
